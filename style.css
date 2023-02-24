@@ -1,5 +1,5 @@
 body{
-  background: rgb(58, 198, 142);
+  background: rgb(93, 205, 160);
   font: normal 15pt Arial;
 }
 
@@ -14,7 +14,6 @@ section{
   padding: 15px;
   width: 500px;
   margin: auto;
-  box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.696);
 }
 
 div{
@@ -26,11 +25,4 @@ footer, a{
  color: white;
  text-align: center;
  text-decoration: none;
-}
-
-img{
- max-width:200px;
-   max-height:150px;
-   width: auto;
-   height: auto;
 }

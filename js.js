@@ -10,11 +10,40 @@ function verificar (){
    let fsex = document.getElementsByName("radsex")
    let idade = ano - Number(fano.value)
    let genero = ""
+   let img = document.createElement('img')//criei o elemento img do html
+   img.setAttribute("id", "foto")//criei um id para ele
    if(fsex[0].checked){
     genero = "Homem"
-   }else if (fsex[1].checked){
     
+     if (idade >=0 && idade <10){
+         img.setAttribute("src", "criançaM.jpg")
+     }else if (idade < 21){
+         img.setAttribute("src", "jovemM.jpg")
+     }else if (idade <50){
+         img.setAttribute("src", "adultoM.jpg")
+     }else if (idade >50){
+         img.setAttribute("src", "idosoM.jpg")
+     }
+
+   }else if (fsex[1].checked){
+     genero = "Mulher"
+
+     if (idade >=0 && idade <10){
+      img.setAttribute("src", "criançaF.jpg")
+    }else if (idade < 21){
+      img.setAttribute("src", "jovemF.jpg")
+    }else if (idade <50){
+      img.setAttribute("src", "adultoF.jpg")
+    }else if (idade >50){
+      img.setAttribute("src", "idosaF.jpg")
+    }
    }
+  
+   res.innerHTML = `Detectamos ${genero} com ${idade} anos`
+   res.appendChild(img) //PARA APARECER A IMAGEM NA TELA
+   res.style.textAlign = "center"
+   img.style.borderRadius = "50%"
+   img.style.maxWidth = "180px"
 }
 
 }
