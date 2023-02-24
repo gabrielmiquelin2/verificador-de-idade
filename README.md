@@ -1,2 +1,3 @@
 # verificador-de-idade
-Verificado de idade utilizando javascript
+Verifica em que ano você nasceu, sabendo disso ele coloca sua idade e uma imagem representando ela.
+
